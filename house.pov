@@ -32,33 +32,75 @@ plane {
 }
 
 // width*depth*height
-// pole left (125x125x2450)
-box { <0,0,0>, <125,125,5250> texture {pigment { color Black }} }
-// pole middle (125x125x2450)
-box { <3018,0,0>, <3143,125,2450> texture {pigment { color Black }} }
-// pole right (125x125x2450)
-box { <6168,0,0>, <6293,125,5250> texture {pigment { color Black }} }
+// pole left
+box { <0,0,0>, <125,125,5250>
+	texture {pigment { color Black }}
+	translate <0, 0, 0>
+}
+// pole middle
+box { <0,0,0>, <125,125,2450> 
+	texture {pigment { color Black }}
+	translate <3018, 0, 0>
+}
+// pole right
+box { <0,0,0>, <125,125,5250> 
+	texture {pigment { color Black }}
+	translate <6168, 0, 0>
+}
 // house
-box { <0,2030,0>, <6360,14000,5250> texture {pigment { color Grey }} }
+box { <0,0,0>, <6360,12000,5250>
+	texture {pigment { color Grey }}
+	translate <0, 2030, 0>
+}
 // door (870x?)
-box { <1750,1990,190>, <2620,1990,2160> texture {pigment { color Brown }} }
+box { <0,0,0>, <870,50,1900>
+	texture {pigment { color Brown }}
+	translate <1750, 1990, 190>
+}
 // window (1540x?)
-box { <3220,1990,1190>, <4760,1990,2000> texture {pigment { color Brown }} }
+box { <0,0,0>, <1540,0,810>
+	texture {pigment { color Brown }}
+	translate <3220, 1990, 1190>
+}
 // altan
-box { <0,0,2450>, <6360,2200,2750> texture {pigment { color Red }} }
+box { <0,0,0>, <6360,2200,300>
+	texture {pigment { color Red }}
+	translate <0, 0, 2450>
+}
 // altan plank (55x1900x200)
-box { <3088,125,2450>, <3143,2030,2750> texture {pigment { color Red }} }
+box { <0,0,0>, <55,1905,300>
+	texture {pigment { color Red }}
+	translate <3088, 125, 2450>
+}
 // floor
-box { <-50,350,0>, <6360,2200,20> texture {pigment { color Brown }} }
+box { <0,0,0>, <6410,1850,20>
+	texture {pigment { color Brown }}
+	translate <-50, 350, 0>
+}
 
 // new south wall
-box { <125,20,0>, <3018,105,2450> texture {pigment { color Red }} }
+box { <0,0,0>, <2893,85,2450>
+	texture {pigment { color Red }}
+	translate <125, 20, 0>
+}
 // new west wall
-box { <20,125,0>, <105,2030,2450> texture {pigment { color Red }} }
+box { <0,0,0>, <85,1905,2450>
+	texture {pigment { color Red }}
+	translate <20, 125, 0>
+}
 // new east wall
-box { <3038,125,0>, <3123,2030,2450> texture {pigment { color Red }} }
-// new east door 1900x900
-//box { <3018,500,0>, <3163,1400,1900> texture {pigment { color Brown }} }
+box { <0,0,0>, <85,1905,2450>
+	texture {pigment { color Red }}
+	translate <3038, 125, 0>
+}
+// new east door
+//box { <0,0,0>, <145,900,1900>
+	//texture {pigment { color Brown }}
+	//translate <3018, 500, 0>
+//}
 // new east double door 1900x1600
-box { <3018,275,0>, <3143,1875,1900> texture {pigment { color Brown }} }
+box { <0,0,0>, <125,1600,1900>
+	texture {pigment { color Brown }}
+	translate <3018, 275, 0>
+}
 
